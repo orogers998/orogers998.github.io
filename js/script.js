@@ -46,8 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         else {
             hiringOptions.style.display = 'none'
-            hourlyRate.removeAttribute("required", "required")
-            scheduleMeeting.removeAttribute("required", "required")
+            hourlyRate.removeAttribute("required")
+            scheduleMeeting.removeAttribute("required")
         }
     }
 });
