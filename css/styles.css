@@ -17,6 +17,7 @@
     --buff: hsla(21, 69%, 73%, 1);
 }
 
+
 /* Reset CSS */
 * {
     margin: 0;
@@ -24,6 +25,7 @@
     border: 0;
     box-sizing: border-box;
 }
+
 
 /* Base styles */
 body {
@@ -91,6 +93,7 @@ body {
     cursor: pointer;
 }
 
+
 /* Infographic section */
 #infographic-section {
     background-color: var(--tropical-indigo);
@@ -105,19 +108,14 @@ body {
     margin-bottom: 10px;
 }
 
-#infographic-section h3 {
-    margin: 20px 0;
-}
-
 #infographic-section .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
 }
 
 #infographic-section .about-me {
-    min-width: 25rem;
-    max-width: 65%;
+    flex: 65%;
     margin-right: 20px;
     padding-bottom: 20px;
 }
@@ -134,7 +132,6 @@ body {
 #infographic-section p {
     line-height: 2;
 }
-
 
 
 /* Education section */
@@ -197,7 +194,6 @@ body {
 #education-section .seneca-right p {
     margin-top: 20px;
 }
-
 
 
 /* Contact Me Section */
