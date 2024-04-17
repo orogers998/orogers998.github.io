@@ -276,11 +276,6 @@ body {
     * {
         font-size: 0.8rem;
     }
-    
-    
-    body {
-        font-size: 70%;
-    }
 
     .container {
         width: 100%;
@@ -291,7 +286,7 @@ body {
     .button {
         background-color: var(--oxford-blue);
         border: 2px solid var(--tropical-indigo);
-        margin: 0 10px;
+        margin: 10px 10px 0 10px;
         padding: 10px 20px;
         text-align: center;
         font-size: 0.8rem;
@@ -302,8 +297,8 @@ body {
 
     #education-section .seneca-left {
         flex: 25%;
-        min-width: 12rem;
-        min-height: 5rem;
+        min-width: 40vh;
+        min-height: 20vh;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -324,7 +319,7 @@ body {
     }
 
     #infographic-section .about-me {
-        max-width: 100%;
+        min-width: 100%;
     }
 }
 
