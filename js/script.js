@@ -1,16 +1,8 @@
 /**
- * WEB222 – Final Assessment
- *
- * I declare that this assignment is my own work in accordance with
- * Seneca Academic Policy. No part of this assignment has been
- * copied manually or electronically from any other source
- * (including web sites) or distributed to other students.
- *
- * Please update the following with your information:
- *
- *      Name:       Owen Rogers
- *      Student ID: 117876235
- *      Date:       17 April 2024
+ * Personal Website
+ *      Author:         Owen Rogers
+ *      Date Created:   17 April 2024
+ *      Last Modified:  26 February 2025
  */
 
 // Execute when the DOM content is loaded

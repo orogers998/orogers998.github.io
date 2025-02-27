@@ -42,7 +42,7 @@ body {
 
 /* Top section */
 #top-section {
-  background-color: var(--oxford-blue);
+  background-image: url("Modern Office Workspace.jpeg");
   text-align: center;
   padding: 50px 0;
 }
