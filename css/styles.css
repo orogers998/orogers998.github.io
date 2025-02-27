@@ -205,6 +205,7 @@ body {
 
 #contact-me-section .container {
   max-width: 800px;
+  text-align: center;
 }
 
 #contact-me-section form {
@@ -261,6 +262,10 @@ body {
   margin: 0;
   margin-top: 20px;
   align-self: start;
+}
+
+#social-media-section {
+  text-align: center;
 }
 
 /* Media Queries */

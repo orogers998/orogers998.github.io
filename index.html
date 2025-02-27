@@ -139,24 +139,135 @@
       <section id="contact-me-section">
         <div class="container">
           <h2>Contact Me</h2>
-          <!--LinkedIn Badge-->
-          <div
-            class="badge-base LI-profile-badge"
-            data-locale="en_US"
-            data-size="medium"
-            data-theme="dark"
-            data-type="VERTICAL"
-            data-vanity="owenrogers998"
-            data-version="v1"
+          <p>Note: This section is under construction.</p>
+          <br />
+          <br />
+
+          <form
+            id="contact"
+            name="contact"
+            action="https://httpbin.org/post"
+            method="POST"
           >
-            <a
-              class="badge-base__link LI-simple-link"
-              href="https://ca.linkedin.com/in/owenrogers998?trk=profile-badge"
-            >
-              <button class="button">Connect with me on LinkedIn!</button>
-            </a>
-          </div>
+            <div class="form-left">
+              <!--Name-->
+              <label for="contact-name"><b>Name: </b></label>
+              <input type="text" id="contact-name" name="name" required />
+              <br />
+              <br />
+
+              <!--Email Address-->
+              <label for="email"><b>Email Address: </b></label>
+              <input type="email" id="email" name="email" required />
+              <br />
+              <br />
+
+              <!--Home Address-->
+              <label for="address"><b>Address: </b></label>
+              <input type="text" id="address" name="address" required />
+              <br />
+              <br />
+
+              <!--City-->
+              <label for="city"><b>City: </b></label>
+              <input type="text" id="city" name="city" list="cities" required />
+              <!-- Autocomplete with common Canadian cities -->
+              <datalist id="cities">
+                <option value="Toronto"></option>
+                <option value="Montreal"></option>
+                <option value="Vancouver"></option>
+                <option value="Calgary"></option>
+                <option value="Edmonton"></option>
+                <option value="Ottawa"></option>
+                <option value="Winnipeg"></option>
+                <option value="Quebec City"></option>
+              </datalist>
+              <br />
+              <br />
+            </div>
+
+            <div class="form-right">
+              <!--Reason for contact-->
+              <label for="reason"><b>Reason for contact: </b></label>
+              <div class="radio-options">
+                <input
+                  type="radio"
+                  id="question"
+                  name="reason"
+                  checked
+                  required
+                />
+                <label for="question">Question</label>
+
+                <input type="radio" id="comment" name="reason" />
+                <label for="comment">Comment</label>
+
+                <input type="radio" id="hiring" name="reason" />
+                <label for="hiring">Hiring</label>
+                <br />
+                <br />
+              </div>
+
+              <!--Message-->
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="How can I help you?"
+                required
+              ></textarea>
+
+              <!--Bonus options (hidden unless user selects "Hiring")-->
+              <div id="hiring-options">
+                <br />
+                <!--Hourly Rate (with input validation)-->
+                <label for="hourly-rate"><b>Hourly Rate: </b></label>
+                <input
+                  type="text"
+                  id="hourly-rate"
+                  name="hourly-rate"
+                  pattern="^\$?\d+(\.\d{2})?$"
+                />
+                <br />
+                <br />
+
+                <!--Schedule a Meeting-->
+                <label for="schedule-meeting"
+                  ><b>Schedule a Meeting: </b></label
+                >
+                <br />
+                <input
+                  id="schedule-meeting"
+                  name="schedule-meeting"
+                  type="date"
+                />
+              </div>
+
+              <!--Submit button-->
+              <input
+                class="button"
+                type="submit"
+                name="Submit"
+                value="Submit"
+              />
+            </div>
+          </form>
         </div>
+      </section>
+
+      <!--Social Media-->
+      <section id="social-media-section">
+        <!--LinkedIn Badge-->
+        <a
+          href="https://www.linkedin.com/in/owenrogers998https://www.linkedin.com/in/owenrogers998"
+        >
+          <button class="button">LinkedIn</button>
+        </a>
+
+        <!--GitHub-->
+        <a href="https://github.com/orogers998"
+          ><button class="button">GitHub</button></a
+        >
       </section>
     </main>
   </body>
