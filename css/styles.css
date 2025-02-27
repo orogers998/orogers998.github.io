@@ -1,325 +1,315 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Passion+One:wght@400;700;900&display=swap');
-  
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Passion+One:wght@400;700;900&display=swap");
 
 /* Define colours as variables - Code reference: https://stackoverflow.com/questions/1875852/how-can-i-define-colors-as-variables-in-css */
 :root {
-    --oxford-blue: hsla(245, 100%, 8%, 1);
-    --tropical-indigo: hsla(242, 48%, 71%, 1);
-    --vista-blue: hsla(227, 57%, 67%, 1);
-    --pomp-and-power: hsla(252, 15%, 50%, 1);
-    --beige: hsla(62, 52%, 90%, 1);
+  --oxford-blue: hsla(245, 100%, 8%, 1);
+  --tropical-indigo: hsla(242, 48%, 71%, 1);
+  --vista-blue: hsla(227, 57%, 67%, 1);
+  --pomp-and-power: hsla(252, 15%, 50%, 1);
+  --beige: hsla(62, 52%, 90%, 1);
 
-    --yinmn-blue: hsla(213, 36%, 32%, 1);
-    --chinese-violet: hsla(276, 16%, 41%, 1);
-    --china-rose: hsla(347, 35%, 55%, 1);
-    --light-coral: hsla(358, 70%, 66%, 1);
-    --buff: hsla(21, 69%, 73%, 1);
+  --yinmn-blue: hsla(213, 36%, 32%, 1);
+  --chinese-violet: hsla(276, 16%, 41%, 1);
+  --china-rose: hsla(347, 35%, 55%, 1);
+  --light-coral: hsla(358, 70%, 66%, 1);
+  --buff: hsla(21, 69%, 73%, 1);
 }
-
 
 /* Reset CSS */
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
-
 
 /* Base styles */
 body {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-    background-color: var(--oxford-blue);
-    color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: var(--oxford-blue);
+  color: white;
 }
 
 .container {
-    width: 95%;
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 50px;
+  width: 95%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 50px;
 }
 
-    
 /* Top section */
 #top-section {
-    background-color: var(--oxford-blue);
-    text-align: center;
-    padding: 50px 0;
+  background-image: url("Modern Office Workspace.jpeg");
+  text-align: center;
+  padding: 50px 0;
 }
-    
+
 #top-section img {
-    width: 50vh;
-    max-width: 100%;
+  width: 50vh;
+  max-width: 100%;
 }
-    
+
 #top-section p {
-    color: var(--tropical-indigo);
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-top: 15px;
+  color: var(--tropical-indigo);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 15px;
 }
-    
+
 #top-section h1 {
-    font-family: "Passion One", sans-serif;
-    font-weight: 700;
-    font-size: 3rem;
+  font-family: "Passion One", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
 }
 
 #top-section h2 {
-    font-weight: 300;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
 .button {
-    background-color: var(--oxford-blue);
-    border: 2px solid var(--tropical-indigo);
-    margin: 10px 20px;
-    padding: 15px 30px;
-    text-align: center;
-    font-size: 1rem;
-    border-radius: 100px;
-    color: white;
+  background-color: var(--oxford-blue);
+  border: 2px solid var(--tropical-indigo);
+  margin: 10px 20px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 100px;
+  color: white;
 }
 
 .button:hover {
-    background-color: var(--tropical-indigo);
-    border-color: var(--oxford-blue);
-    color:var(--oxford-blue);
-    cursor: pointer;
+  background-color: var(--tropical-indigo);
+  border-color: var(--oxford-blue);
+  color: var(--oxford-blue);
+  cursor: pointer;
 }
-
 
 /* Infographic section */
 #infographic-section {
-    background-color: var(--tropical-indigo);
-    color: var(--oxford-blue);
+  background-color: var(--tropical-indigo);
+  color: var(--oxford-blue);
 }
 
 #infographic-section h2 {
-    text-align: left;
-    font-family: "Passion One", sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    margin-bottom: 10px;
+  text-align: left;
+  font-family: "Passion One", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 #infographic-section .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
 }
 
 #infographic-section .about-me {
-    flex: 65%;
-    margin-right: 20px;
-    padding-bottom: 20px;
+  flex: 65%;
+  margin-right: 20px;
+  padding-bottom: 20px;
 }
 
 #infographic-section .basic-information {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 #infographic-section .left-col {
-    padding-bottom: 5px;
-    padding-right: 50px;
+  padding-bottom: 5px;
+  padding-right: 50px;
 }
 
 #infographic-section p {
-    line-height: 2;
+  line-height: 2;
 }
-
 
 /* Education section */
 #education-section {
-    background-color: var(--pomp-and-power);
-    color: var(--oxford-blue);
+  background-color: var(--pomp-and-power);
+  color: var(--oxford-blue);
 }
 
 #education-section h2 {
-    text-align: center;
-    font-family: "Passion One", sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    margin-bottom: 20px;
+  text-align: center;
+  font-family: "Passion One", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 #education-section h4 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 #education-section .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    overflow: hidden;
-    background-color: var(--light-coral);
-    margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--light-coral);
+  margin-bottom: 20px;
 }
 
 #education-section .seneca-left {
-    flex: 25%;
-    min-width: 12rem;
-    min-height: 8rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    color: white;
+  flex: 25%;
+  min-width: 12rem;
+  min-height: 8rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
 }
 
 #education-section .seneca-left p {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 #education-section .seneca-left h3 {
-    margin: 0 20px;
+  margin: 0 20px;
 }
 
 #education-section .seneca-right {
-    flex: 75%;
-    padding: 20px;
-    text-align: left;
-    background-color: white;
-    color: var(--oxford-blue);
+  flex: 75%;
+  padding: 20px;
+  text-align: left;
+  background-color: white;
+  color: var(--oxford-blue);
 }
 
 #education-section .seneca-right p {
-    margin-top: 20px;
+  margin-top: 20px;
 }
-
 
 /* Contact Me Section */
 #contact-me-section {
-    background-color: var(--oxford-blue);
-    color: white;
+  background-color: var(--oxford-blue);
+  color: white;
 }
 
 #contact-me-section h2 {
-    text-align: center;
-    font-family: "Passion One", sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    margin-bottom: 10px;
+  text-align: center;
+  font-family: "Passion One", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 #contact-me-section .container {
-    max-width: 800px;
+  max-width: 800px;
 }
 
 #contact-me-section form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 #contact-me-section .form-left {
-    min-width: 20rem;
-    padding-right: 10px;
+  min-width: 20rem;
+  padding-right: 10px;
 }
 
 #contact-me-section .form-right {
-    min-width: 20rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
+  min-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
 }
 
 #contact-me-section .form-left label {
-    display: block;
+  display: block;
 }
 
 #contact-me-section .form-right label {
-    padding-left: 2px;
-    padding-right: 12px;
+  padding-left: 2px;
+  padding-right: 12px;
 }
 
 #contact-me-section form input[type="text"],
 #contact-me-section form input[type="email"],
 #contact-me-section form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid var(--tropical-indigo);
-    background-color: transparent;
-    color: white;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--tropical-indigo);
+  background-color: transparent;
+  color: white;
 }
 
 #contact-me-section form input[type="radio"] {
-    padding: 10px;
-    /* Radio button accent colour - Code reference: https://www.w3schools.com/cssref/playdemo.php?filename=playcss_accent-color */
-    accent-color: var(--tropical-indigo);
+  padding: 10px;
+  /* Radio button accent colour - Code reference: https://www.w3schools.com/cssref/playdemo.php?filename=playcss_accent-color */
+  accent-color: var(--tropical-indigo);
 }
 
 #contact-me-section form input[type="date"] {
-    border: 1px solid var(--tropical-indigo);
-    background-color: transparent;
-    padding: 5px 15px;
-    color: white;
+  border: 1px solid var(--tropical-indigo);
+  background-color: transparent;
+  padding: 5px 15px;
+  color: white;
 }
 
-
 #contact-me-section form input[type="submit"] {
-    margin: 0;
-    margin-top: 20px;
-    align-self: start;
+  margin: 0;
+  margin-top: 20px;
+  align-self: start;
 }
 
 /* Media Queries */
 @media only screen and (max-width: 400px) {
-    * {
-        font-size: 0.8rem;
-    }
+  * {
+    font-size: 0.8rem;
+  }
 
-    .container {
-        width: 100%;
-        max-width: 1024px;
-        margin: 0 auto;
-    }
+  .container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 
-    .button {
-        background-color: var(--oxford-blue);
-        border: 2px solid var(--tropical-indigo);
-        margin: 10px 10px 0 10px;
-        padding: 10px 20px;
-        text-align: center;
-        font-size: 0.8rem;
-        border-radius: 100px;
-        color: white;
-    }
-    
+  .button {
+    background-color: var(--oxford-blue);
+    border: 2px solid var(--tropical-indigo);
+    margin: 10px 10px 0 10px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 100px;
+    color: white;
+  }
 
-    #education-section .seneca-left {
-        flex: 25%;
-        min-width: 40vh;
-        min-height: 20vh;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        color: white;
-    }
-    
-    .about-me,
-    .basic-information,
-    .seneca-left,
-    .seneca-right {
-        flex: 100%;
-    }
+  #education-section .seneca-left {
+    flex: 25%;
+    min-width: 40vh;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+  }
 
-    #infographic-section .container {
-        justify-content: center;
-        align-items: flex-start;
-    }
+  .about-me,
+  .basic-information,
+  .seneca-left,
+  .seneca-right {
+    flex: 100%;
+  }
 
-    #infographic-section .about-me {
-        min-width: 100%;
-    }
+  #infographic-section .container {
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  #infographic-section .about-me {
+    min-width: 100%;
+  }
 }
-
